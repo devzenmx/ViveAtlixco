@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="utf-8">
+    <meta http-Equiv="Cache-Control" Content="no-cache" /> 
+    <meta http-Equiv="Pragma" Content="no-cache" /> 
+    <meta http-Equiv="Expires" Content="0" />
+    <title>Vive Atlixco</title>
+
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"/> 
+    <script src="js\jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script> 
+    <link rel="stylesheet" href="css/style.css?n=3"/>
+  </head>
+          <script>
+        function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+        };
+                          
+        function MyOnline() {
+        document.getElementById("Ads-Contenedor").src = "https://viveatlixco.com/"; 
+        }
+          
+        function MyOffline() {
+        document.getElementById("Ads-Contenedor").src = "welcome.html?var=" + getRandomInt(1,300); 
+        } 
+              
+        $(document).ready(function() {
+        var conn = true;
+        checkConnection();
+        if (conn == true) {
+        MyOnline();
+        } else {
+        MyOffline();
+        }
+        function checkConnection() {
+    	$.ajax({
+  			url: "https://viveatlixco.com/process.php?var=" + getRandomInt(1,300),
+  			async: false,
+  			data: {'tag' : 'connection'}
+  		})
+  		.fail(function() { conn = false; })
+  		.done(function() { conn = true; })
+        }
+        })
+              
+              function getFrame(){
+        window.addEventListener('online', function() {
+        document.getElementById("Ads-Contenedor").src = "https://viveatlixco.com"; 
+}, false);
+
+window.addEventListener('offline', function() {
+        document.getElementById("Ads-Contenedor").src = "welcome.html?var=" + getRandomInt(1,300); 
+}, false);
+              }
+      </script>
+    <body>
+        <div class="menu-contenedor">
+        <div>
+        <iframe id="Ads-Contenedor"  onload="getFrame()" frameborder="0" scrolling="yes"></iframe>
+        </div>
+    </body>
+        <script>
+            $(document).ready(function(){
+            $('.sidenav').sidenav();
+            });
+        </script>
+</html>    
