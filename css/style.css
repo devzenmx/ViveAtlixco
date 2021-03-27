@@ -1,0 +1,472 @@
+html {
+  font-size: 62.5%; /* Now 10px = 1rem! */
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px; /* px fallback */
+  font-size: 1.6rem; /* default font-size for document */
+  line-height: 1.5; /* a nice line-height */
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#myInput {
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  background-size: 8%;
+  width: 74%;
+  font-size: 2rem;
+  padding: 2% 0px 1.5% 5%;
+  font-family: Raleway;
+  border: 0.1px solid #000;
+  border-radius: 15px;
+  margin-bottom: 12px;
+  margin-left: 20%;
+  margin-top: 2.5%;
+}
+
+#myInput::placeholder{
+    color: black;
+    font-family: Raleway;
+    font-weight: 400;
+}
+
+#myInput:focus{
+  outline: none;
+}
+
+.header-s{
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+    height: 8%;
+    top: 0;
+}
+
+/** HEADER HOME **/
+nav{
+    background-color:transparent;
+    position: absolute;
+    height: 4.5vh;
+}
+
+.nav{
+    box-shadow:0px 3px 0px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 4.4vh;
+    position: fixed;
+}
+
+nav img{
+    width: 8%;
+    margin-top: 6%;
+    margin-left: -25%;
+}
+
+
+.heading img{
+    width: 100%;
+    height: 60%;
+}
+
+.Pats{
+    width: 100%;
+}
+
+.Pats h1{
+    width: 95%;
+    font-size: 160%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    margin-top: 5%;
+    margin-left: 2.5%;
+}
+
+.Pats p{
+    width: 92%;
+    margin-left: 4%;
+    text-align: center;
+    font-size: 110%;
+    margin-top: 3%;
+}
+
+.z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-small, .btn-floating, .dropdown-content, .collapsible, .sidenav{
+    box-shadow: 0 0 0 0;
+}
+
+.sidenav{
+    width: 60%; 
+}
+
+.opc{
+    margin-top: 190%;
+}
+
+
+.selec{
+    position: absolute;
+    background-color:#d43176;
+    height: 4.7rem;
+    width: 1rem;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-left: -3.2rem;
+}
+
+.block-me{
+    background-color: white;
+    position: fixed;
+    margin-top: 2%;
+    z-index: 1;
+    width: 14%;
+    height: 6%;
+    margin-left: 2%;
+    border-radius: 10rem;
+}
+
+.selec2{
+    position: absolute;
+    background-color:#f7b63d;
+    height: 4.7rem;
+    width: 1rem;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-left: -3.2rem;
+}
+
+.selec3{
+    position: absolute;
+    background-color:#178fde;
+    height: 4.7rem;
+    width: 1rem;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-left: -3.2rem;
+}
+
+.selec4{
+    position: absolute;
+    background-color:#78ba33;
+    height: 4.7rem;
+    width: 1rem;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin-left: -3.2rem;
+}
+
+.menu{
+    width: 30%;
+    margin: 0;
+    margin-left: -6%;
+    margin-top: 4%;
+}
+
+#Ads-Contenedor{
+    width: 100%;
+    margin-top: 0rem;
+    height: 100%;
+}
+
+
+/** ERROR **/
+.error-p{
+    width: 92%;
+    font-size: 2rem;
+    text-align: justify;
+    font-family: Raleway;
+    font-weight: 300;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 0rem;
+}
+
+.error-p2{
+    width: 92%;
+    font-size: 2rem;
+    text-align: justify;
+    font-family: Raleway;
+    font-weight: 300;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 5rem;
+}
+
+/** CSS WEB **/
+
+#events{
+    position: absolute;
+    margin-top: 13%;
+}
+
+#events li{
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+#events h3{
+    font-family: Raleway;
+    font-size: 2.5rem;
+    position: relative;
+    margin-top: -7.5rem;
+    margin-left: -3rem;
+    color: white;
+    font-weight: 600;
+}
+
+#events .pink{
+    font-size: 1.5rem;
+    text-align: left;
+    font-family:Arial;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-top: -2.54rem;
+    margin-left: -3rem;
+    color: white;
+    font-weight: 100;
+    background-color: #e43c84;
+    width: 16rem;
+    padding: 4px 0px 3px 12px;
+}
+
+#events img{
+    width: 114.7%;
+    margin-left: -15%;
+    position:relative;
+    filter:brightness(0.5);
+}
+
+/** OFF-EAT **/
+
+
+#Off-Eat{
+    position: absolute;
+    margin-top: 10%;
+}
+
+#Off-Eat li{
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 2%;
+}
+
+#Off-Eat h3{
+    font-family: Raleway;
+    font-size: 160%;
+    position: relative;
+    margin-top: -35%;
+    margin-left: 25%;
+    color: black;
+    font-weight: 600;
+}
+
+#Off-Eat .desc{
+    font-size: 110%;
+    text-align:justify;
+    font-family:Raleway;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-top: -10%;
+    margin-left: 21.5%;
+    color:black;
+    font-weight: 500;
+    width: 69%;
+    padding: 4px 0px 3px 12px;
+}
+
+#Off-Eat .ub{
+    font-size: 110%;
+    text-align:justify;
+    font-family:Raleway;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-top: -2%;
+    margin-left: 21.5%;
+    color:green;
+    font-weight: 600;
+    width: 69%;
+    padding: 4px 0px 3px 12px;
+}
+
+#Off-Eat .map img{
+    width: 5vh;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 73%;   
+}
+
+#Off-Eat .tel img{
+    width: 5vh;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 58%;   
+}
+
+#Off-Eat .hor{
+    font-size: 90%;
+    text-align:center;
+    font-family:Arial;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-top: 7%;
+    margin-left: -12%;
+    color:white;
+    background-color:#e33680;
+    font-weight: 300;
+    width: 74%;
+    padding: 4px 0px 3px 0px;
+}
+
+#Off-Eat .hor2{
+    font-size: 90%;
+    text-align:center;
+    font-family:Arial;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-top: 7%;
+    margin-left: -12%;
+    color:white;
+    background-color:#1990de;
+    font-weight: 300;
+    width: 74%;
+    padding: 4px 0px 3px 0px;
+}
+
+#Off-Eat .hor3{
+    font-size: 90%;
+    text-align:center;
+    font-family:Arial;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-top: 7%;
+    margin-left: -12%;
+    color:white;
+    background-color:#68a22b;
+    font-weight: 300;
+    width: 74%;
+    padding: 4px 0px 3px 0px;
+}
+
+#Off-Eat .hor4{
+    font-size: 90%;
+    text-align:center;
+    font-family:Arial;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-top: 7%;
+    margin-left: -12%;
+    color:white;
+    background-color:#ce962d;
+    font-weight: 300;
+    width: 74%;
+    padding: 4px 0px 3px 0px;
+}
+
+
+#Off-Eat img{
+    width: 35%;
+    margin-left: -12%;
+    position:relative;
+    padding-top: 5%;
+}
+
+/** OFF VISIT **/
+
+#Off-Vis{
+    position: absolute;
+    margin-top: 10%;
+}
+
+#Off-Vis li{
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 0%;
+}
+
+#Off-Vis h3{
+    font-family: Raleway;
+    font-size: 3.5vh;
+    position: relative;
+    margin-top: -37%;
+    margin-left: 25%;
+    color: black;
+    font-weight: 600;
+}
+
+#Off-Vis .map img{
+    width: 5vh;
+    position: relative;
+    margin-top: -9%;
+    margin-left: 77%;   
+}
+
+#Off-Vis img{
+    width: 35%;
+    margin-left: -12%;
+    position:relative;
+    padding-top: 5%;
+}
+
+#Off-Vis .tit-v{
+    font-size: 2.5vh;
+    margin-left: 27%;
+    padding-top: 6%;
+    position: relative;
+}
+
+#Off-Vis .img-v{
+    border-radius: 15px 50px;
+    width: 35%;
+    padding-top: 6%;
+}
+
+#Off-Vis .desc2{
+    font-size: 2.2vh;
+    text-align:justify;
+    font-family:Raleway;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-top: -6%;
+    margin-left: 24%;
+    color:black;
+    font-weight: 500;
+    width: 68%;
+    padding: 4px 0px 3px 12px;
+}
+
+#Off-Vis .ub-g{
+    font-size: 2vh;
+    text-align:justify;
+    font-family:Raleway;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    margin-top: -7%;
+    margin-left: 21%;
+    color:green;
+    font-weight: 600;
+    width: 45%;
+    padding: 4px 0px 3px 12px;
+    margin-bottom: 2rem;
+}
+
